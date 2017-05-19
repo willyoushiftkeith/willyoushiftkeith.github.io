@@ -56,8 +56,26 @@
   text-align: center;
 	vertical-align: middle;
     white-space: pre-line;
-font-family: verdana;
     font-size: 20px;
+	display: flex
+    justify-content: space-between
+    margin: 0
+    padding: 0
+    list-style: none
+
+    & > a
+      max-width: 250px
+      text-decoration: none
+      color: $muted-gray
+      transition: color .2s ease-in-out
+
+      &:hover
+        color: $white
+    h3
+      font-size: 16px
+      text-transform: uppercase
+    p
+      margin-bottom: 0
 }
 .Book > section:target {
     display: block;
@@ -71,16 +89,56 @@ font-family: verdana;
     display: block;
 text-align: center;
 	vertical-align: middle;
-font-family: verdana;
     font-size: 20px;
+	display: flex
+    justify-content: space-between
+    margin: 0
+    padding: 0
+    list-style: none
+
+    & > a
+      max-width: 250px
+      text-decoration: none
+      color: $muted-gray
+      transition: color .2s ease-in-out
+
+      &:hover
+        color: $white
+
+    h3
+      font-size: 16px
+      text-transform: uppercase
+
+    p
+      margin-bottom: 0
 
 }
 .Book > section:target ~ .intro {
     display: none;
 text-align: center;
 	vertical-align: middle;
-font-family: verdana;
     font-size: 20px;
+	display: flex
+    justify-content: space-between
+    margin: 0
+    padding: 0
+    list-style: none
+
+    & > a
+      max-width: 250px
+      text-decoration: none
+      color: $muted-gray
+      transition: color .2s ease-in-out
+
+      &:hover
+        color: $white
+
+    h3
+      font-size: 16px
+      text-transform: uppercase
+
+    p
+      margin-bottom: 0
 
 }
 </style>
