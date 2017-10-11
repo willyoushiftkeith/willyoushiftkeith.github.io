@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color: white;}
+h1   {color:black;}
+p    {color: black;align="center"}
+</style>
+</head>
+<body>
+<img src="assets/img/logo.png" alt="Quiche">
+    <p align="center"><b>Quiche</b></p>
+
+   </body>
+  </html>
