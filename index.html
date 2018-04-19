@@ -11,7 +11,124 @@
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-
+ <style>
+.Book {
+}
+.Book > section {
+    display: none;
+  text-align: center;
+	vertical-align: middle;
+    white-space: pre-line;
+    font-size: 20px;
+	display: flex
+    justify-content: space-between
+    margin: 0
+    padding: 0
+    list-style: none
+    & > a
+      max-width: 350px
+      text-decoration: none
+      color: $muted-gray
+      transition: color .2s ease-in-out
+      &:hover
+        color: $white
+    h3
+      font-size: 16px
+      text-transform: uppercase
+    p
+      margin-bottom: 0
+		a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 8px 8px;
+    text-align: left; 
+    text-decoration: none;
+    display: inline-block;
+}
+	a:hover, a:active {
+    background-color: red;
+}
+}
+.Book > section:target {
+    display: block;
+text-align: center;
+	vertical-align: middle;
+font-family: verdana;
+    font-size: 20px;
+}
+.Book > .intro {
+    display: block;
+text-align: center;
+	vertical-align: middle;
+    font-size: 20px;
+	display: flex
+    justify-content: space-between
+    margin: 0
+    padding: 0
+    list-style: none
+    & > a
+      max-width: 350px
+      text-decoration: none
+      color: $muted-gray
+      transition: color .2s ease-in-out
+      &:hover
+        color: $white
+    h3
+      font-size: 16px
+      text-transform: uppercase
+    p
+      margin-bottom: 0
+		a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: left; 
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover, a:active {
+    background-color: red;
+}
+}
+.Book > section:target ~ .intro {
+    display: none;
+text-align: center;
+	vertical-align: middle;
+    font-size: 20px;
+	display: flex
+    justify-content: space-between
+    margin: 0
+    padding: 0
+    list-style: none
+    & > a
+      max-width: 350px
+      text-decoration: none
+      color: $muted-gray
+      transition: color .2s ease-in-out
+      &:hover
+        color: $white
+    h3
+      font-size: 16px
+      text-transform: uppercase
+    p
+      margin-bottom: 0
+		a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: left; 
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover, a:active {
+    background-color: red;
+}
+}
+	#link_bar a { padding:5px; font-weight:bold; float:left; display: inline; font-size: 10px;}
+    #link_bar a:link { color:white; background-color:#0000a0; text-decoration: none; }
+    #link_bar a:hover { color:white; background-color:#000060;  text-decoration: none; }
+    #link_bar a:active { color:white; background-color:#00ff00;  text-decoration: none; }
+</style>
 <!-- notification for small viewports and landscape oriented smartphones -->
 <div class="device-notification">
   <a class="device-notification--logo" href="#0">
@@ -96,7 +213,7 @@
 	      <p><button class="button"><div id="link_bar">
          <a href="#100">Previous Product</a></div>
 		      <p><button class="button"><div id="link_bar">
-	<a href="#008">Next Product</a>
+	<a href="#101">Next Product</a>
 	</div></button></p>
 
       </div>
@@ -104,7 +221,48 @@
               </div>
 
     </section>
- 
+ <section id="101">
+	 <div class="intro">
+            <div class="card">
+      <div class="container">
+        <h2>The Meat canyon</h2>
+	      <p class="title">The ravenous maw of Keith</p>
+        
+ <p class="slider--item-description">Its sloppy, meaty and deep.</p>
+
+	      <p><button class="button"><div id="link_bar">
+         <a href="#100">Previous Product</a></div>
+		      <p><button class="button"><div id="link_bar">
+	<a href="#102">Next Product</a>
+	</div></button></p>
+
+      </div>
+    </div>
+              </div>
+
+    </section>
+	 <section id="102">
+	 <div class="intro">
+            <div class="card">
+      <div class="container">
+        <h2>The Trump Special</h2>
+        <p class="title">Shoutout to Roisin Richards</p>
+         
+<p class="slider--item-description">Limited edition. Designed by keith for a beast. 
+	      Will shift Jason if he has to.</p>
+       
+
+	      <p><button class="button"><div id="link_bar">
+         <a href="#101">Previous Product</a></div>
+		      <p><button class="button"><div id="link_bar">
+	<a href="#103">Next Product</a>
+	</div></button></p>
+
+      </div>
+    </div>
+              </div>
+
+    </section>
 </div>
                   <style>
 .column {
